@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ruda:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'space';
+    src: url(../fonts/space\ age.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    --font2: 'Ruda', sans-serif;
+    --font3: 'space', cursive;
+}
+
+:root {
+    --cor00: #89D2DC;
+    --cor01: #3772FF;
+    --cor02: #2667FF;
+    --cor03: #101D42;
+    --cor04: #0D1317;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor04);
+    font-family: var(--font1); 
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(43, 116, 172), rgb(15, 46, 87));
+    min-height: 10vh;
+    text-align: center;
+}
+
+header img {
+    padding: 30px 0px 10px 0px;
+}
+
+header > p {
+    color: white;
+    font-family:  var(--font2);
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.414);
+}
+
+nav > a {
+    color: rgb(43, 116, 172);
+    font-family: var(--font2);
+    font-size: 1.5em;
+    margin: 0px 20px 0px 10px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: rgb(43, 116, 172);
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.507);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 850px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.491);
+}
+
+h1.normal {
+    color: var(--cor03);
+    font-family: var(--font3);
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 10px;
+    font-family: var(--font1);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p, a {
+    color: white;
+    font-family: var(--font2);
+}
+
+footer a {
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--cor01);
+    text-decoration: underline;
+}
